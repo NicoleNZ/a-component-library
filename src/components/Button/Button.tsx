@@ -45,11 +45,11 @@ const StyledButton = styled.button<ButtonProps>`
     props.primary ? themeColors.orangePrimary : themeColors.orangeSecondary};
   opacity: ${(props) => (props.disabled ? 0.5 : 1)};
   &:hover {
-    background-color: ${themeColors.cloudWhite};
-    color: ${themeColors.darkLeafGreen};
+    background-color: ${themeColors.skyBlue};
+    color: ${themeColors.cloudWhite};
   }
   &:active {
-    border: solid 0.125rem ${themeColors.darkLeafGreen};
+    border: solid 0.125rem ${themeColors.orangePrimary};
     padding: ${(props) =>
       props.size === "small"
         ? "0.313rem 1.438rem 0.375rem"
