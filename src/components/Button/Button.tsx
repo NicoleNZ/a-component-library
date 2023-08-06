@@ -40,16 +40,19 @@ const StyledButton = styled.button<ButtonProps>`
       : props.size === "medium"
       ? "0.563rem 1.875rem 0.688rem"
       : "0.875rem 1.875rem 1rem"};
-  color: ${themeColors.cloudWhite};
+  color: ${(props) =>
+    props.primary ? themeColors.cloudWhite : themeColors.orangePrimary};
   background-color: ${(props) =>
-    props.primary ? themeColors.orangePrimary : themeColors.orangeSecondary};
+    props.primary ? themeColors.orangePrimary : themeColors.cloudWhite};
+  border: ${(props) =>
+    props.primary ? "none" : `solid 0.125rem ${themeColors.orangePrimary}`};
   opacity: ${(props) => (props.disabled ? 0.5 : 1)};
   &:hover {
-    background-color: ${themeColors.skyBlue};
+    background-color: ${(props) =>
+      props.primary ? themeColors.skyBlue : themeColors.orangePrimary};
     color: ${themeColors.cloudWhite};
   }
   &:active {
-    border: solid 0.125rem ${themeColors.orangePrimary};
     padding: ${(props) =>
       props.size === "small"
         ? "0.313rem 1.438rem 0.375rem"

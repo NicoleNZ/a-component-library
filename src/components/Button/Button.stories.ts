@@ -18,12 +18,14 @@ export const Primary: Story = {
   args: {
     primary: true,
     text: "Button",
+    testId: "button",
   },
 };
 
 export const Secondary: Story = {
   args: {
     text: "Button",
+    testId: "button",
   },
 };
 
@@ -31,6 +33,7 @@ export const Disabled: Story = {
   args: {
     disabled: true,
     text: "Button",
+    testId: "button",
   },
 };
 
@@ -38,6 +41,7 @@ export const Small: Story = {
   args: {
     size: "small",
     text: "Button",
+    testId: "button",
   },
 };
 
@@ -45,6 +49,7 @@ export const Medium: Story = {
   args: {
     size: "medium",
     text: "Button",
+    testId: "button",
   },
 };
 
@@ -52,5 +57,6 @@ export const Large: Story = {
   args: {
     size: "large",
     text: "Button",
+    testId: "button",
   },
 };
