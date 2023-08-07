@@ -1,6 +1,5 @@
 import React from "react";
 import { CheckboxSVGProps } from "./CheckboxSVG.types";
-import styled from "styled-components";
 
 const CheckboxSVG: React.FC<CheckboxSVGProps> = ({
   hexFillColor,

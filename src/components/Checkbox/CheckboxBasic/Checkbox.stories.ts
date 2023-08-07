@@ -1,31 +1,45 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { themeColors } from "../../../globals/colors";
-import CheckboxSVG from "./Checkbox";
+import Checkbox from "./Checkbox";
 
 const meta = {
-  title: "A Component Library/CheckboxSVG",
-  component: CheckboxSVG,
+  title: "A Component Library/Checkbox",
+  component: Checkbox,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
-} satisfies Meta<typeof CheckboxSVG>;
+} satisfies Meta<typeof Checkbox>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Circle: Story = {
+export const Checked: Story = {
   args: {
-    name: "circle",
-    hexFillColor: themeColors.orangePrimary,
-    circle: true,
+    name: "checked",
+    checked: true,
   },
 };
 
-export const Square: Story = {
+export const Unchecked: Story = {
   args: {
-    name: "square",
-    hexFillColor: themeColors.orangePrimary,
-    circle: false,
+    name: "unchecked",
+    checked: false,
+  },
+};
+
+export const CheckedColor: Story = {
+  args: {
+    name: "checked",
+    checked: true,
+    color: themeColors.skyBlue,
+  },
+};
+
+export const UncheckedColor: Story = {
+  args: {
+    name: "unchecked",
+    checked: false,
+    color: themeColors.skyBlue,
   },
 };

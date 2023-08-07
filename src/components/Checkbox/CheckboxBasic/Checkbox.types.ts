@@ -1,5 +1,11 @@
-export interface CheckboxSVGProps {
+type CheckboxHandler = (value?: boolean, name?: string) => void;
+export interface CheckboxProps {
+  className?: string;
+  checked?: boolean;
+  color?: string;
+  disabled?: boolean;
   name?: string;
-  hexFillColor?: string;
-  circle?: boolean;
+  handler?: CheckboxHandler;
+  selectedRef?: any;
+  testId?: string;
 }
