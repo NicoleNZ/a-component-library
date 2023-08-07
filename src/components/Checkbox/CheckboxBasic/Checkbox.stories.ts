@@ -30,7 +30,7 @@ export const Unchecked: Story = {
 
 export const CheckedColor: Story = {
   args: {
-    name: "checked",
+    name: "checked-color",
     checked: true,
     color: themeColors.skyBlue,
   },
@@ -38,8 +38,15 @@ export const CheckedColor: Story = {
 
 export const UncheckedColor: Story = {
   args: {
-    name: "unchecked",
+    name: "unchecked-color",
     checked: false,
     color: themeColors.skyBlue,
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    name: "disabled",
+    disabled: true,
   },
 };

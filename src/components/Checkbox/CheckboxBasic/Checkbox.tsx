@@ -70,6 +70,8 @@ const StyledCheckbox = styled.input<CheckboxProps>`
   &:disabled {
     cursor: not-allowed;
     opacity: 0.7;
+    border: 0.125rem solid #a8a8a8;
+    background-color: ${themeColors.cloudWhite};
   }
 `;
 
