@@ -1,7 +1,7 @@
 import { ChangeEventHandler } from "react";
 
 export interface InputProps {
-  testId: string;
+  testId?: string;
   id?: string;
   label?: string;
   error?: boolean;

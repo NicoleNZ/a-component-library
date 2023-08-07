@@ -58,9 +58,9 @@ const Input: FC<InputProps> = ({
 }) => {
   return (
     <Fragment>
-      <StyledLabel testId={`${testId}-label`}>
+      <StyledLabel data-testid={`${testId}-label`}>
         <StyledText
-          testId={`${testId}-labelText`}
+          data-testid={`${testId}-labelText`}
           disabled={disabled}
           error={error}
         >
@@ -68,7 +68,7 @@ const Input: FC<InputProps> = ({
         </StyledText>
       </StyledLabel>
       <StyledInput
-        testId={testId}
+        data-testid={testId}
         id={id}
         type="text"
         onChange={onChange}
@@ -78,8 +78,8 @@ const Input: FC<InputProps> = ({
         placeholder={placeholder}
         {...props}
       ></StyledInput>
-      <StyledMessage testId={`${testId}-message`}>
-        <StyledText testId={`${testId}-messageText`} error={error}>
+      <StyledMessage data-testid={`${testId}-message`}>
+        <StyledText data-testid={`${testId}-messageText`} error={error}>
           {message}
         </StyledText>
       </StyledMessage>

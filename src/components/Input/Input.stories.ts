@@ -19,7 +19,6 @@ export const Primary: Story = {
     error: false,
     disabled: false,
     label: "Favourite Episode of Schitt's Creek",
-    testId: "input",
   },
 };
 
@@ -30,7 +29,6 @@ export const Success: Story = {
     disabled: false,
     label: "Favourite Episode of Schitt's Creek",
     message: "Very nice - I like that one too",
-    testId: "input",
   },
 };
 
@@ -40,7 +38,6 @@ export const Error: Story = {
     disabled: false,
     label: "Favourite Episode of Schitt's Creek",
     message: "Ewww David!  Please try again :)",
-    testId: "input",
   },
 };
 
@@ -48,6 +45,5 @@ export const Disabled: Story = {
   args: {
     disabled: true,
     label: "Disabled",
-    testId: "input",
   },
 };
