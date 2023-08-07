@@ -1,7 +1,7 @@
 import { MouseEventHandler } from "react";
 
 export interface ButtonProps {
-  testId: string;
+  testId?: string;
   text?: string;
   primary?: boolean;
   disabled?: boolean;
